@@ -36,6 +36,7 @@
 	--accent-3: hsla(190, 70%, 42%, 0.078); /* accent buttons */
 	--accent-4: hsl(190, 70%, 36%); /* accent buttons when hovered */
 	--accent-5: hsl(190, 70%, 30%); /* accent buttons when clicked */
+	--accent-6: hsla(0, 0%, 100%, 0.541); /* mention glow */
 	--mention: hsla(190, 80%, 52%, 0.1); /* mentions & mention messages */
 	--mention-hover: hsla(190, 80%, 52%, 0.05); /* mentions & mention messages when hovered */
 
@@ -96,6 +97,52 @@
 
 }
 
+
+
+[src*="https://cdn.discordapp.com/avatars/172037090232631297/9f8d8c34da8ae9b975b7ede8da69aae3.webp?size=160"]+h3 span span {
+	display: inline-block !important;
+	background: linear-gradient(90deg,
+		rgba(255, 0, 0, 0.8),
+		rgba(255, 165, 0, 0.8),
+		rgba(255, 255, 0, 0.8),
+		rgba(0, 255, 0, 0.8),
+		rgba(0, 0, 255, 0.8),
+		rgba(75, 0, 130, 0.8),
+		rgba(244, 4, 136, 0.8));
+	background-size: 200% 100%;
+	/* Increase size for smoother, more complex animation */
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+	color: transparent !important;
+	animation: rainbowAnimation 5s linear infinite;
+	;
+	/* Adjust duration for a more complex effect */
+	font-size: 20px;
+	font-family: Impact, Charcoal, sans-serif !important;
+	/* Set the font to Impact */
+	-webkit-text-stroke: 1px black;
+  
+  }
+  
+  
+  @keyframes rainbowAnimation {
+	0% {
+	  background-position: 0% 0%;
+	}
+  
+	25% {
+	  background-position: 50% 0%;
+	}
+  
+	50% {
+	  background-position: 100% 0%;
+	}
+  }
+
+  .editor_a552a6   {
+	color: var(--text-3);
+}
+
 .closedFolderIconWrapper_bc7085 {
 	background: var(--bg-5);
 }
@@ -114,15 +161,22 @@
 .name_a08117,
 .membersGroup_cbd271, 
 .reactionCount_ec6b19,
-.defaultColor_a595eb {
+.defaultColor_a595eb,
+.editor_a552a6 {
     font-family: var(--font3);
 }  
 
 /* Notification pills (shining effect) */
 
-.unread_d8bfb3.unreadImportant_d8bfb3 {
+.unread_d8bfb3.unreadImportant_d8bfb3  {
 	background-color: var(--text-3);
 	box-shadow: 0 0 10px 2px var(--accent-2);
+}
+
+.mention  {
+	color: var(--accent-1);
+	box-shadow: 0 0 4px 2px var(--accent-6);
+	border-radius: 8px; /* Adjust the value to control the roundness */
 }
 
 .username_f9f2ca,
@@ -133,6 +187,7 @@
 
 .item_c4cd66 {
 	background-color: var(--text-3);
+	box-shadow: 0 0 2px 1px var(--accent-6);
 }
 
 .defaultColor_a595eb  {
