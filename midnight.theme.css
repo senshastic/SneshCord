@@ -22,17 +22,17 @@
 
 
 	/* top left corner text */
-	--corner-text: 'FallenStar';
+	--corner-text: 'SneshCorp';
 
 	/* color of status indicators and window controls */
-	--online-indicator: hsl(187, 82%, 59%); /* change to #23a55a for default green */
+	--online-indicator: hsla(150, 100%, 20%, 0.963); /* change to #23a55a for default green */
 	--dnd-indicator: hsl(340, 73%, 51%); /* change to #f13f43 for default red */
 	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
 	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
 
 	/* accent colors */
 	--accent-1: hsl(190, 70%, 60%); /* links */
-	--accent-2: hsl(232, 84%, 68%); /* general unread/mention elements */
+	--accent-2: hsl(0, 84%, 68%); /* general unread/mention elements */
 	--accent-3: hsla(190, 70%, 42%, 0.078); /* accent buttons */
 	--accent-4: hsl(190, 70%, 36%); /* accent buttons when hovered */
 	--accent-5: hsl(190, 70%, 30%); /* accent buttons when clicked */
@@ -78,11 +78,11 @@
 	--roundness-xs: 10px; /* channels, buttons */
 	--roundness-xxs: 8px; /* searchbar, small elements */
 
-	/* direct messages moon icon */
-	/* change to block to show, none to hide */
+	/* direct messages hap icon */
+
 	--discord-icon: none; /* discord icon */
 	--custom-icon: block; /* hap icon */
-	--custom-icon-url: url('https://i.imgur.com/CsE9KLs.png'); /* custom icon url */
+	--custom-icon-url: url('https://i.imgur.com/CsE9KLs.png'); /* put whatever but pretty sure it ain't working, janky */
 	--custom-icon-size: cover;
 
 
@@ -118,7 +118,12 @@
     font-family: var(--font3);
 }  
 
+/* Notification pills (shining effect) */
 
+.unread_d8bfb3.unreadImportant_d8bfb3 {
+	background-color: var(--text-3);
+	box-shadow: 0 0 10px 2px var(--accent-2);
+}
 
 .username_f9f2ca,
 .name_a08117,
@@ -126,12 +131,16 @@
     color: var(--text-3);
 }
 
+.item_c4cd66 {
+	background-color: var(--text-3);
+}
+
 .defaultColor_a595eb  {
-	color: var(--text-2);
+	color: var(--text-7);
 }
 
 .reactionCount_ec6b19 {
-    color: var(--text-7);
+    color: var(--text-6);
 }
 /* change fonts (edit the variables above, not this part) */
 :root {
@@ -754,7 +763,7 @@ button.button_dd4f85 /* small buttons */,
 }
 
 
-/* Custom DM button moon icon */
+/* Custom DM button hap icon */
 .childWrapper_f90abb > svg:not(.favoriteIcon_dcc7a4) {
     display: var(--discord-icon);
 }
@@ -787,7 +796,7 @@ button.button_dd4f85 /* small buttons */,
     background-color: transparent !important; /* Ensure transparency */
 }
 
-/* Ensure no white square appears */
+/* Ensure no fking white square appears */
 .childWrapper_f90abb::before {
     background-color: transparent !important; /* No background color */
     border: none !important; /* No border */
