@@ -29,6 +29,7 @@
 	--dnd-indicator: hsl(340, 73%, 51%); /* change to #f13f43 for default red */
 	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
 	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
+	--talking-indicator: hsla(57, 46%, 81%, 0.533);
 
 	/* accent colors */
 	--accent-1: hsl(190, 70%, 60%); /* links */
@@ -139,6 +140,68 @@
 	}
   }
 
+/*
+.wrapper_f90abb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--custom-icon-url);
+    background-size: var(--custom-icon-size);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: transform var(--moon-spin-transition);
+    z-index: 2;
+}
+
+
+.wrapper_f90abb:hover::before {
+    transform: rotate(360deg);
+}
+
+
+.wrapper_f90abb.selected_f90abb::before {
+    transform: rotate(-360deg) scale(0.9);
+}
+
+
+.wrapper_f90abb::before {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.wrapper_f90abb > svg {
+    display: var(--discord-icon);
+}
+
+
+.wrapper_f90abb::before {
+    display: var(--custom-icon);
+}
+
+*/
+
+
+
+/* Rotate the SVG on hover 
+.wrapper_c5f96a:hover svg {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Rotate the SVG when selected 
+.wrapper_c5f96a.selected_a5ad63 svg {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+*/
+
   .editor_a552a6   {
 	color: var(--text-3);
 }
@@ -173,7 +236,77 @@
 	box-shadow: 0 0 10px 2px var(--accent-2);
 }
 
-.mention  {
+
+
+.avatarSpeaking_c51b4e {
+    position: relative;
+    display: inline-block;
+    background-color: transparent; /* Ensure the background color does not fill the avatar */
+}
+
+.avatarSpeaking_c51b4e::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 4px solid transparent; /* Make border initially transparent */
+    background: linear-gradient(90deg,
+        rgba(248, 89, 89, 0.8),
+        rgba(242, 164, 75, 0.8),
+        rgba(255, 255, 88, 0.8),
+        rgba(96, 245, 96, 0.8),
+        rgba(56, 225, 247, 0.8),
+        rgba(137, 91, 251, 0.688),
+        rgba(236, 67, 135, 0.8));
+    background-size: 200% 200%;
+    animation: rainbowBorderAnimation 5s linear infinite;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    box-sizing: border-box;
+    pointer-events: none; /* Ensure it doesn't interfere with any interaction */
+}
+
+@keyframes rainbowBorderAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes glow {
+	0% {
+	  box-shadow: 0 0 10px 3px var(--talking-indicator);
+	}
+  
+	50% {
+	  box-shadow: 0 0 20px 10px var(--talking-indicator);
+	}
+  
+	100% {
+	  box-shadow: 0 0 7px 2px var(--talking-indicator);
+	}
+  }
+
+  
+  
+  .avatarSpeaking_d80634 {
+	animation: glow 2s infinite ease-in-out;
+  }
+
+
+.mention {
 	color: var(--accent-1);
 	box-shadow: 0 0 4px 2px var(--accent-6);
 	border-radius: 8px; /* Adjust the value to control the roundness */
@@ -193,6 +326,7 @@
 .defaultColor_a595eb  {
 	color: var(--text-7);
 }
+
 
 .reactionCount_ec6b19 {
     color: var(--text-6);
