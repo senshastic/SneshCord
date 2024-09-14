@@ -1,0 +1,42 @@
+.tutorialContainer_f9623d .wrapper__8436d,
+.tutorialContainer_f9623d .svg_c5f96a {
+  height: 57px;
+  width: 48px;
+  -webkit-animation-name: y-spin;
+  animation-name: y-spin;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.tutorialContainer_f9623d .wrapper__8436d foreignobject svg *,
+.tutorialContainer_f9623d .svg_c5f96a foreignobject svg * {
+  fill: none !important;
+}
+
+@-webkit-keyframes y-spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes y-spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}

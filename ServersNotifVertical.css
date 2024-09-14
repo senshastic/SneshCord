@@ -1,0 +1,47 @@
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Style for listItem */
+div[data-dnd-name="FallenWorld"] {
+	--borderWidth: 2px;
+	background   : #1d1f2000;
+	position     : relative;
+	border-radius: var(--borderWidth);
+	padding      : 0;
+	z-index      : 1;
+}
+
+/* Gradient border */
+div.pill_a5ad63:has(span[style="opacity: 1; height: 8px; transform: none;"])+div>div[data-dnd-name="FallenWorld"]::before {
+	content : "";
+	position: absolute;
+	top     : calc(-1 * var(--borderWidth));
+	left    : calc(-1 * var(--borderWidth));
+	height  : calc(100% + var(--borderWidth) * 2);
+	width   : calc(100% + var(--borderWidth) * 2);
+	background: linear-gradient(60deg,
+			#f79533,
+			#f37055,
+			#ef4e7b,
+			#c72c7c,
+			#7a388f,
+			#5073b8,
+			#1098ad,
+			#07b39b,
+			#6fba82);
+	border-radius  : calc(5 * var(--borderWidth));
+	z-index        : -1;
+	animation      : animatedgradient 4s ease infinite;
+	background-size: 300% 300%;
+}

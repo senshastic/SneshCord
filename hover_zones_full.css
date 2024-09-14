@@ -1,0 +1,66 @@
+:root {
+
+    --label-font-weight: 500;
+
+    --panel-roundness: inherit; /* Inherit roundness from your existing theme */
+    --border-width: 2px;
+    --border-color: rgba(255, 255, 255, 0); /* Transparent by default */
+    --border-hover-color: rgba(255, 245, 225, 0.8); /* Cream-like color for the highlight */
+    --border-transition: 0.2s ease;
+
+    --neon-glow-color: rgba(255, 245, 225, 0.7); /* Cream neon glow */
+    --neon-glow-size: 0px 0px 10px 5px; /* Shadow size for the glow */
+
+    --bg-0: rgba(19%, 0, 0, 0); /* Fully transparent background */
+    --bg-1: oklch(23% 0 0);
+    --bg-2: oklch(27% 0 0);
+    --bg-3: oklch(31% 0 0);
+
+    --acc-0: oklch(73% 0.12 300); /* purple */
+    --acc-1: oklch(63% 0.12 300); /* lighter purple */
+    --acc-2: oklch(53% 0.12 300); /* even lighter purple */
+}
+
+/* Transparent zones and highlight only border on hover with glow effect */
+[class^=panels_] /* user panel */,
+[class^=sidebar_] > [class^=container_] /* channel list */,
+[class^=chatContent_] > [class^=messagesWrapper_] /* chat */,
+[class^=membersWrap_] /* member list */,
+.guilds_a4d4d9 /* server list */,
+[class^=privateChannels_] /* dm list */,
+.container_fc4f04 /* header bar */,
+[class^=peopleColumn_] /* friends page list */,
+[class^=nowPlayingColumn_] /* friends page active now */,
+[class^=channelBottomBarArea_] /* chat bar */,
+.container_a6d69a /* forum */,
+[class^=userPanelOuter_] /* dm profile panel */,
+[class^=searchResultsWrap_] /* search results */,
+.scroller_fb4810 /* new thread */,
+[class^=chat_] > [class*=container_] /* header bar */,
+[class^='form_'] > [class^='wrapper_'] /* no access chat bar */ {
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent when not hovered */
+    border: var(--border-width) solid var(--border-color); /* Transparent border by default */
+    transition: border-color var(--border-transition), box-shadow 0.3s ease; /* Smooth transition for border and glow */
+}
+
+/* Hover effect: cream glow border only, no background */
+[class^=panels_]:hover /* user panel */,
+[class^=sidebar_] > [class^=container_]:hover /* channel list */,
+[class^=chatContent_] > [class^=messagesWrapper_]:hover /* chat */,
+[class^=membersWrap_]:hover /* member list */,
+.guilds_a4d4d9:hover /* server list */,
+[class^=privateChannels_]:hover /* dm list */,
+.container_fc4f04:hover /* header bar */,
+[class^=peopleColumn_]:hover /* friends page list */,
+[class^=nowPlayingColumn_]:hover /* friends page active now */,
+[class^=channelBottomBarArea_]:hover /* chat bar */,
+.container_a6d69a:hover /* forum */,
+[class^=userPanelOuter_]:hover /* dm profile panel */,
+[class^=searchResultsWrap_]:hover /* search results */,
+.scroller_fb4810:hover /* new thread */,
+[class^=chat_] > [class*=container_]:hover /* header bar */,
+[class^='form_'] > [class^='wrapper_']:hover /* no access chat bar */ {
+    background-color: rgba(255, 255, 255, 0); /* No background highlight */
+    border-color: var(--border-hover-color); /* Cream border color appears on hover */
+    box-shadow: var(--neon-glow-size) var(--neon-glow-color); /* Cream neon glow effect */
+}

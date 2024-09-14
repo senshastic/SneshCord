@@ -1,0 +1,20 @@
+:root {
+  /* Define the corner text variable */
+  --corner-text: '@SneshCorp';
+}
+
+.container_a4d4d9::before {
+  content: var(--corner-text) !important;
+  display: block !important;
+  position: fixed !important;
+  top: 25px !important; /* Move it to the top */
+  right: 1823px !important; /* Move it to the right edge */
+  padding: 5px; /* Add a little padding if needed */
+  font-family: var(--font) !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  color: hsla(195, 100%, 99%, 0.399) !important;
+  background-color: transparent !important; /* Keep it transparent */
+  z-index: 9999 !important; /* Keep it on top */
+  text-shadow: 0 0 8px rgba(240, 255, 108, 0.776); /* Faint white glow */
+}
