@@ -1,0 +1,69 @@
+
+/* customize things here */
+:root {
+	
+	--bg-s4: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,151,255,1) 100%);
+  --bg-s1: hsl(244, 47%, 26%);
+  --bg-s1-gradient: radial-gradient(circle at center, hsl(244, 47%, 26%) 30%, rgba(29, 28, 76, 0.5) 98%, rgba(54, 68, 136, 0.392) 100%);
+  --bg-s2-gradient: linear-gradient(180deg, rgba(29, 28, 76, 1) 25%, rgba(27, 37, 116, 1) 100%);
+  --bg-s2-nongradient: hsl(241, 46%, 20%);
+  --bg-s5:hsl(260, 81%, 2%);
+  --bg-s5-gradient: radial-gradient(at bottom left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 70%), hsl(260, 81%, 2%);
+  --bg-s4-gradient: linear-gradient(to bottom, hsl(235, 49%, 10%) 98.5%, rgba(93, 99, 231, 0.341) 100%);
+  --bg-s6: hsl(245, 48%, 9%);
+  --bg-s3: hsl(248, 51%, 10%);
+  --bg-test: hsl(0, 100%, 50%);
+  --bg-backbackground: linear-gradient(to bottom left, hsl(260, 77%, 5%) 60%, hsl(244, 47%, 26%) 100%);
+}
+
+
+.scroller_c43953,
+.thin_eed6a8,
+.header_fd6364,
+.scrollerBase_eed6a8,
+.fade_eed6a8,
+.customTheme_eed6a8 {
+  background: var(--bg-s2-gradient) !important;
+}
+
+.header_fd6364 {
+  background: var(--bg-s2-nongradient) !important;
+}
+
+
+/* super dark middle */ 
+.divider_d5deea,
+.hasContent_d5deea,
+.divider_c2654d,
+.hasContent_c2654d,
+.scrollerInner_e2e187 {
+  background: var(--bg-s5) !important;
+}
+/* .message_d5deea is message, need to do when hovered */ 
+
+.channelBottomBarArea_a7d72e,
+.form_a7d72e {
+  background: var(--bg-s5) !important;
+}
+
+.members_cbd271 {
+  background: var(--bg-s4-gradient) !important;
+}
+
+.scroller_fea3ef {
+  background: var(--bg-s1-gradient) !important;
+}
+
+.container_a4d4d9,
+.layer_d4b6c5.baseLayer_d4b6c5 {
+  background-color: var(--bg-backbackground) !important;
+}
+
+.textArea_d0696b,
+.textAreaSlate_d0696b,
+.slateContainer_e52116,
+.scrollableContainer_d0696b,
+.themedBackground_d0696b,
+.button_df39bd {
+  background-color: var(--bg-s3) !important;
+}

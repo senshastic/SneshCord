@@ -19,7 +19,9 @@
 	--font2: 'Whitney';
 	--font3: 'CMU Concrete';
 	--font: 'CC Wild Words';
+	--font5: 'Comic Code';
 	--font4: 'CC Wild Words'
+
 
 
 	/* top left corner text */
@@ -59,6 +61,7 @@
 	--bg-4: hsla(228, 50%, 43%, 0.185); /* main background color */
 	--bg-5: hsla(228, 91%, 70%, 0.438); /* main background color */
 	--bg-6: hsla(228, 60%, 49%, 0); /* server name background color */
+	--bg-7: hsla(239, 73%, 39%, 0.438); /* server name background color */
 	--hover: hsla(0, 100%, 50%, 0.1); /* channels and buttons when hovered */
 	--active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
 	--message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
@@ -141,67 +144,15 @@
 	}
   }
 
-/*
-.wrapper_f90abb::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: var(--custom-icon-url);
-    background-size: var(--custom-icon-size);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    border-radius: 50%;
-    transition: transform var(--moon-spin-transition);
-    z-index: 2;
+
+.container_b2ca13 {
+    background-color: var(--bg-7) !important; /* Force the background color */
+    background: var(--bg-7) !important; /* Ensure it's applied */
+    color: var(--text-3) !important; /* Text color */
+
+    border-radius: var(--roundness-m) !important; /* Apply rounded corners */
 }
 
-
-.wrapper_f90abb:hover::before {
-    transform: rotate(360deg);
-}
-
-
-.wrapper_f90abb.selected_f90abb::before {
-    transform: rotate(-360deg) scale(0.9);
-}
-
-
-.wrapper_f90abb::before {
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-
-.wrapper_f90abb > svg {
-    display: var(--discord-icon);
-}
-
-
-.wrapper_f90abb::before {
-    display: var(--custom-icon);
-}
-
-*/
-
-
-
-/* Rotate the SVG on hover 
-.wrapper_c5f96a:hover svg {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Rotate the SVG when selected 
-.wrapper_c5f96a.selected_a5ad63 svg {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in-out;
-}
-*/
 
   .editor_a552a6   {
 	color: var(--text-3);

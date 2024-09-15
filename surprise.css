@@ -1,3 +1,53 @@
+
+:root {
+      /* direct messages hap icon */
+      --discord-icon: none; /* discord icon */
+      --custom-icon: block; /* hap icon */
+      --custom-icon-url: url('https://i.imgur.com/CsE9KLs.png'); /* put whatever but pretty sure it ain't working, janky */
+      --custom-icon-size: cover;
+
+      --moon-spin-transition: 0.4s ease;
+
+
+} 
+
+/* Custom DM button hap icon */
+.childWrapper_f90abb > svg:not(.favoriteIcon_dcc7a4) {
+  display: var(--discord-icon);
+}
+.childWrapper_f90abb:has(> svg:not(.favoriteIcon_dcc7a4))::before {
+  content: '';
+  display: var(--custom-icon);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: var(--custom-icon-url);
+  background-size: var(--custom-icon-size);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent; /* Ensure transparency */
+  transition: transform var(--moon-spin-transition); /* Only rotate, no color change */
+  border: none; /* Ensure no border is applied */
+  box-shadow: none; /* Remove any shadow effects */
+}
+.wrapper_f90abb:hover .childWrapper_f90abb::before {
+  background-color: transparent !important; /* Keep it transparent */
+  border: none !important; /* No border */
+  box-shadow: none !important; /* No shadow */
+  transform: rotate(360deg) scale(1); /* Rotate the icon */
+}
+.wrapper_f90abb.selected_f90abb > .childWrapper_f90abb::before {
+  transform: rotate(-360deg) scale(0.8);
+  background-color: transparent !important; /* Ensure transparency */
+}
+/* Ensure no fking white square appears */
+.childWrapper_f90abb::before {
+  background-color: transparent !important; /* No background color */
+  border: none !important; /* No border */
+  box-shadow: none !important; /* No shadow */
+}
+
+
 .tutorialContainer_f9623d .wrapper__8436d,
 .tutorialContainer_f9623d .svg_c5f96a {
   height: 57px;
