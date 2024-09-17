@@ -1,0 +1,30 @@
+@keyframes rainbowBackgroundTransparent {
+    0% { background-color: rgba(255, 0, 0, 0.4); }      /* Red */
+    16% { background-color: rgba(255, 165, 0, 0.4); }    /* Orange */
+    33% { background-color: rgba(255, 255, 0, 0.4); }    /* Yellow */
+    50% { background-color: rgba(0, 128, 0, 0.4); }      /* Green */
+    66% { background-color: rgba(0, 0, 255, 0.4); }      /* Blue */
+    83% { background-color: rgba(75, 0, 130, 0.4); }     /* Indigo */
+    100% { background-color: rgba(238, 130, 238, 0.4); } /* Violet */
+  }
+  
+  @keyframes rainbow {
+    0% { color: rgba(255, 0, 0, 1); }      /* Red */
+    16% { color: rgba(255, 165, 0, 1); }    /* Orange */
+    33% { color: rgba(255, 255, 0, 1); }    /* Yellow */
+    50% { color: rgba(0, 128, 0, 1); }      /* Green */
+    66% { color: rgba(0, 0, 255, 1); }      /* Blue */
+    83% { color: rgba(75, 0, 130, 1); }     /* Indigo */
+    100% { color: rgba(238, 130, 238, 1); } /* Violet */
+  }
+  
+  [aria-label*=gay] [class*=folderIconWrapper] {
+    animation: rainbowBackgroundTransparent 5s infinite;
+    transition: background-color 0.5s ease;
+  }
+  
+  [aria-label*=gay] [class*=folderIconWrapper] svg {
+    animation: rainbow 5s infinite;
+    transition: color 0.5s ease;
+  }
+

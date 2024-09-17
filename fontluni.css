@@ -1,0 +1,44 @@
+/* Import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define font variables */
+:root {
+    /* Font customization */
+    --font2: 'Whitney';
+    --font3: 'CMU Concrete';
+    --font: 'CC Wild Words';
+    --font5: 'Comic Code';
+    --font4: 'CC Wild Words';
+}
+
+/* Apply fonts to specific elements */
+.markup_f8f345,
+.text_d7ebeb {
+    font-family: var(--font2), sans-serif;
+}
+
+.username_f9f2ca {
+    font-family: var(--font4);
+}
+
+.name_bf515c,
+.name_a08117,
+.membersGroup_cbd271, 
+.reactionCount_ec6b19,
+.defaultColor_a595eb,
+.editor_a552a6 {
+    font-family: var(--font3);
+}
+
+/* Change font globally with fallback fonts */
+:root {
+    --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: var(--font2), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Apply fonts to text and button elements */
+button,
+input,
+textarea {
+    font-family: var(--font-primary), sans-serif;
+}
