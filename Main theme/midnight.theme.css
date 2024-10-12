@@ -32,7 +32,6 @@
 	--dnd-indicator: hsl(340, 73%, 51%); /* change to #f13f43 for default red */
 	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
 	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
-	--talking-indicator: hsla(57, 46%, 81%, 0.533);
 
 	/* accent colors */
 	--accent-1: hsl(190, 70%, 60%); /* links */
@@ -193,25 +192,10 @@
 }
 
 
-@keyframes glow {
-	0% {
-	  box-shadow: 0 0 10px 3px var(--talking-indicator);
-	}
-  
-	50% {
-	  box-shadow: 0 0 20px 10px var(--talking-indicator);
-	}
-  
-	100% {
-	  box-shadow: 0 0 7px 2px var(--talking-indicator);
-	}
-  }
+
 
   
   
-  .avatarSpeaking_d80634 {
-	animation: glow 2s infinite ease-in-out;
-  }
 
 
 .mention {

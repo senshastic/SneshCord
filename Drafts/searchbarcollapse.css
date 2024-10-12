@@ -1,0 +1,74 @@
+/* Force search bar to collapse initially */
+.search_ff5f90 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  order: var(--search-order, 1);
+}
+
+/* Search bar container, starts collapsed */
+.search_ff5f90 .searchBar_a46bef {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Ensure background is visible */
+  width: 24px !important; /* Collapsed width */
+  height: 24px !important;
+  border-radius: 12px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s ease, background-color 0.3s ease !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+}
+
+/* Expanded state on hover or focus */
+.search_ff5f90 .searchBar_a46bef:hover,
+.search_ff5f90 .searchBar_a46bef:focus-within {
+  width: 200px !important; /* Expanded width */
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Darker background when expanded */
+  cursor: text !important;
+}
+
+/* Input field inside the search bar */
+.search_ff5f90 .searchBar_a46bef input {
+  width: 100% !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  background: transparent !important;
+  color: white !important;
+  font-size: 14px !important;
+  opacity: 0 !important; /* Initially hidden */
+  transition: opacity 0.3s ease !important; /* Smooth fade-in */
+}
+
+/* Show input when bar is expanded */
+.search_ff5f90 .searchBar_a46bef:hover input,
+.search_ff5f90 .searchBar_a46bef:focus-within input {
+  opacity: 1 !important; /* Make input visible when expanded */
+}
+
+/* Icon container (search icon is always visible) */
+.search_ff5f90 .iconContainer_effbe2 {
+  width: 24px !important;
+  height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+}
+
+/* Icon styling */
+.search_ff5f90 .iconContainer_effbe2 .searchIcon {
+  font-size: 16px !important;
+  color: white !important;
+}
+
+/* Optional: hide the placeholder text when collapsed */
+.search_ff5f90 .searchBar_a46bef input::placeholder {
+  color: transparent !important; /* Hide placeholder text */
+}
+
+/* Show the placeholder text when expanded */
+.search_ff5f90 .searchBar_a46bef:hover input::placeholder,
+.search_ff5f90 .searchBar_a46bef:focus-within input::placeholder {
+  color: white !important; /* Show placeholder when expanded */
+}

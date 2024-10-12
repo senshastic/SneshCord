@@ -1,0 +1,15 @@
+/* Hover Anim */
+.wrapper_d8bfb3 .link_d8bfb3 /* channels */,
+.membersWrap_cbd271 .container_e9f61e /* members */,
+.channel_c91bad /* dms */,
+.side_a0 .item_a0 /* settings */ {
+    transition: margin-left 0.2s ease;
+}
+.wrapper_d8bfb3:hover .link_d8bfb3,
+.side_a0 .item_a0:hover {
+    margin-left: 10px;
+}
+.membersWrap_cbd271 .container_e9f61e:hover,
+.channel_c91bad:hover {
+    margin-left: 18px;
+}

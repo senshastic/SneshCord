@@ -1,0 +1,20 @@
+/* Loading screen change */
+
+
+[class^=content]:has(> video[data-testid="app-spinner"]) {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    translate: 25%;
+    width: 200px;
+    height: 180px;
+    background-image: url('https://cdn.discordapp.com/emojis/1278725803567349830.gif?size=240&quality=lossless') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  video { visibility: hidden; }
+}

@@ -1,0 +1,15 @@
+/* Hide chat box if you have no permissions to write in the channel */ 
+
+[class*=channelTextAreaDisabled] {
+  display: none!important;
+}
+
+/* or if it doesn't work like because of themes: */
+[class*=channelTextAreaDisabled] {
+  opacity: 0!important;
+  position: absolute!important;
+  height: 0px!important;
+  width: 0px!important;
+  z-index: 0!important;
+}
+

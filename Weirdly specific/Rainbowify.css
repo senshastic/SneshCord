@@ -1,0 +1,41 @@
+[data-author-username="fararagi"]>div>div>h3>span>span {
+  display: inline-block !important;
+  background: linear-gradient(90deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 165, 0, 0.8),
+      rgba(255, 255, 0, 0.8),
+      rgba(0, 255, 0, 0.8),
+      rgba(0, 0, 255, 0.8),
+      rgba(75, 0, 130, 0.8),
+      rgba(211, 0, 134, 0.8));
+  background-size        : 200% 100%;
+  /* Increase size for smoother, more complex animation */
+  -webkit-background-clip: text !important;
+  background-clip        : text !important;
+  color                  : transparent !important;
+  animation              : rainbowAnimation 5s linear infinite;
+  ;
+  /* Adjust duration for a more complex effect */
+  font-size          : 20px;
+  font-family        : Impact, Charcoal, sans-serif !important;
+  /* Set the font to Impact */
+  -webkit-text-stroke: 1px black;
+
+}
+
+
+
+
+@keyframes rainbowAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  25% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+}

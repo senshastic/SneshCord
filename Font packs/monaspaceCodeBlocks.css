@@ -1,0 +1,97 @@
+
+/* font */ 
+code {
+    font-family: 'Monaspace Xenon' !important;
+}
+
+/* background code block */ 
+code {
+    background-color: #00011e !important;
+}
+
+/* background inline code */ 
+
+.inline {
+    background-color: #26285a !important;
+}
+
+
+/*snake animation */ 
+
+code {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+}
+
+code::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 3px;
+    background: linear-gradient(90deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%);
+    background-size: 200% 200%;
+    animation: smoothSnakeLine 6s linear infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+/* Defining the keyframes for the gradient animation */
+@keyframes smoothSnakeLine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/* acrylic + pastel rgb footer */ 
+
+.footer_d8e2d0 {
+    background: linear-gradient(135deg, 
+        rgba(255, 183, 197, 0.6),  
+        rgba(255, 223, 186, 0.6),  
+        rgba(255, 249, 196, 0.6),  
+        rgba(202, 255, 191, 0.6),  
+        rgba(186, 244, 255, 0.6),  
+        rgba(206, 186, 255, 0.6)
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* misc */ 
+
+.shiki-container {
+    background-color: transparent !important;
+}
+
+

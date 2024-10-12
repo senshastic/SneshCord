@@ -1,0 +1,23 @@
+
+:root {
+
+	/* accent colors */
+	--accent-pills: hsl(0, 84%, 68%); /* general unread/mention elements */
+
+
+	/* text colors */
+
+	--text-pills: hsl(0, 0%, 100%); /* normal text */
+
+
+
+}
+
+
+
+/* Notification pills (shining effect) */
+
+.unread_d8bfb3.unreadImportant_d8bfb3  {
+	background-color: var(--text-pills);
+	box-shadow: 0 0 10px 2px var(--accent-pills);
+}

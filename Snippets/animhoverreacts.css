@@ -1,0 +1,20 @@
+
+
+[class^=reaction_]:not(:has(.burstGlow_ec6b19)) .emoji {
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d; /* Enables 3D transformations */
+}
+
+[class^=reaction_]:not(:has(.burstGlow_ec6b19)):hover .emoji {
+  animation: flipAndScale 0.6s forwards;
+}
+
+@keyframes flipAndScale {
+  from {
+      transform: rotateY(0deg) scale(1);
+  }
+  to {
+      transform: rotateY(360deg) scale(1.5);
+  }
+}
+

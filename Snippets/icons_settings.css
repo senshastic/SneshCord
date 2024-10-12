@@ -1,0 +1,10 @@
+
+/* Requires themeattribute plugin - puts icons in settings */
+
+@import url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/DiscordIcons.css");
+
+[class^='membersGroup']:has([role=button]),
+[class^='member'] [class^='container']:has([class*='badges']) {
+  display: none;
+}
+

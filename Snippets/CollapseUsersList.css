@@ -1,0 +1,56 @@
+ .members_cbd271,
+ .container_cbd271 {
+     width     : 64px;
+     transition: 0.3s ease-out;
+ }
+
+ /* ------------------------------- hide pseudo ------------------------------ */
+ .content_d808b0 {
+     display: none;
+ }
+
+ /* -------------------------- Show pseudo on hover -------------------------- */
+ .container_cbd271:hover .content_d808b0,
+ .content_eed6a8 {
+     display: block;
+ }
+
+
+ /* -------------------------------------------------------------------------- */
+ /*                                  Main stuf                                 */
+ /* -------------------------------------------------------------------------- */
+
+ .membersWrap_cbd271,
+ .membersWrap_cbd271 {
+     min-width: 0;
+     width    : min-content;
+ }
+
+
+ .container_cbd271:hover,
+ .container_cbd271:hover .members_cbd271 {
+     width: 240px !important;
+ }
+
+ .member_a31c43 {
+     max-width: unset;
+ }
+
+ .membersGroup_cbd271 {
+     overflow     : hidden;
+     text-overflow: ellipsis;
+     white-space  : nowrap;
+     /* does the magic text cutting*/
+ }
+
+
+
+ /* Forum fixes */
+ .membersWrap_cbd271:hover .members_cbd271 {
+     width: 240px !important;
+ }
+
+ .membersWrap_cbd271:hover .content_d808b0,
+ .content_eed6a8 {
+     display: block;
+ }

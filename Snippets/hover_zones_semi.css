@@ -21,18 +21,14 @@
 }
 
 /* Transparent zones and highlight only border on hover with glow effect, limited to server list and member list */
-.guilds_a4d4d9, /* Server list */
-[class^=membersWrap_], /* Member list wrapper */
-[class^=members-] /* Member list container */ {
+.guilds_a4d4d9 {
     background-color: rgba(255, 255, 255, 0); /* Fully transparent when not hovered */
     border: var(--border-width) solid var(--border-color); /* Transparent border by default */
     transition: border-color var(--border-transition), box-shadow 0.3s ease; /* Smooth transition for border and glow */
 }
 
 /* Hover effect: cream glow border only, no background for server list and member list */
-.guilds_a4d4d9:hover, /* Server list on hover */
-[class^=membersWrap_]:hover, /* Member list wrapper on hover */
-[class^=members-]:hover /* Member list container on hover */ {
+.guilds_a4d4d9:hover /* Server list on hover */ {
     background-color: rgba(255, 255, 255, 0); /* No background highlight */
     border-color: var(--border-hover-color); /* Cream border color appears on hover */
     box-shadow: var(--neon-glow-size) var(--neon-glow-color); /* Cream neon glow effect */
