@@ -1,0 +1,19 @@
+[class^="memberInner"]:has(div>div[aria-label*="Online"]) {
+    background: linear-gradient(to right, rgb(68, 105, 68), transparent);
+
+}
+
+[class^="memberInner"]:has(div>div[aria-label*="Idle"]) {
+    background: linear-gradient(to right, rgb(135, 105, 75), transparent);
+
+}
+
+[class^="memberInner"]:has(div>div[aria-label*="Do Not Disturb"]) {
+    background: linear-gradient(to right, rgb(130, 70, 70), transparent);
+
+}
+
+[class^="memberInner"]:has(div>div[aria-label*="Offline"]) {
+    background: linear-gradient(to right, rgb(66, 66, 66), transparent);
+
+}
