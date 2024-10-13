@@ -17,3 +17,7 @@
     background: linear-gradient(to right, rgb(66, 66, 66), transparent);
 
 }
+
+[class^="memberInner"]:has(div>div[aria-label*="Streaming"]) {
+    background: linear-gradient(to right, rgb(125, 88, 206), transparent);
+}
