@@ -16,7 +16,7 @@
 /* customize things here */
 :root {
 	/* font, change to 'gg sans' for default discord font*/
-	--font2: 'Whitney';
+	--font2: 'Monaspace Xenon';
 	--font3: 'CMU Concrete';
 	--font: 'CC Wild Words';
 	--font5: 'Comic Code';
@@ -102,6 +102,37 @@
 }
 
 
+/* ANCHOR [SETTINGS] */ 
+
+
+.accountProfileCard_b69b77,
+.badgeList_b69b77,
+.credentialList_eaef52,
+.lookFilled_f6639d.select_f6639d,
+.popout_f6639d {
+	background-color: rgba(5, 5, 5, .18) !important;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(100px) saturate(110%);
+	-webkit-backdrop-filter: blur(100px);
+	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.background_b69b77,
+.fieldList_b69b77,
+.avatar_b69b77 {
+	background-color: transparent !important;
+}
+
+/* ANCHOR [EDIT PROFILE] */ 
+
+.bioTextArea_ccf27d,
+.inputDefault_f8bc55.input_f8bc55 {
+	border: 1.5px solid #d0b575 !important;
+	background-color: transparent !important;
+}
+
+
 .container_b2ca13 {
     background-color: var(--bg-7) !important; /* Force the background color */
     background: var(--bg-7) !important; /* Ensure it's applied */
@@ -125,6 +156,7 @@
 
 .markup_f8f345,
 .text_d7ebeb {
+	font-size: 14px;
     font-family: var(--font2), sans-serif;
 }  
 
