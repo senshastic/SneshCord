@@ -1,0 +1,246 @@
+/* ANCHOR [EMBEDS] */ 
+
+
+:root {
+    --start-angle: 0deg;
+    --radial-gradient-gold: #f2a36600 25deg, #ad0057 43.4deg, #fbe3d100 60deg, #101419cc 100deg, #fff0 310deg, #101419cc 408.4deg;
+    --radial-gradient-blue: #f2a36600 25deg, #0056ad 43.4deg, #fbe3d100 60deg, #101419cc 100deg, #fff0 310deg, #101419cc 408.4deg;
+  }
+
+
+.embedWrapper_b558d0{
+	font-family: 'Monaspace Krypton' !important;
+    border: none !important;
+}
+
+.embedWrapper_b558d0:hover{
+	background-color: rgba(0, 14, 58, 0) !important;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(100px) saturate(110%);
+    -webkit-backdrop-filter: blur(100px);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: translateY(-4px);
+}
+
+
+.embedWrapper_b558d0::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 3px;
+    background: conic-gradient(from var(--start-angle) at 50% 50%, var(--radial-gradient-gold));
+    animation: vibrantSnakeSpin 4s linear infinite;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+
+  @keyframes vibrantSnakeSpin {
+    0.0% { background: conic-gradient(from calc(var(--start-angle) + 0.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    0.5% { background: conic-gradient(from calc(var(--start-angle) + 1.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    1.0% { background: conic-gradient(from calc(var(--start-angle) + 3.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    1.5% { background: conic-gradient(from calc(var(--start-angle) + 5.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    2.0% { background: conic-gradient(from calc(var(--start-angle) + 7.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    2.5% { background: conic-gradient(from calc(var(--start-angle) + 9.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    3.0% { background: conic-gradient(from calc(var(--start-angle) + 10.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    3.5% { background: conic-gradient(from calc(var(--start-angle) + 12.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    4.0% { background: conic-gradient(from calc(var(--start-angle) + 14.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    4.5% { background: conic-gradient(from calc(var(--start-angle) + 16.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    5.0% { background: conic-gradient(from calc(var(--start-angle) + 18.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    5.5% { background: conic-gradient(from calc(var(--start-angle) + 19.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    6.0% { background: conic-gradient(from calc(var(--start-angle) + 21.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    6.5% { background: conic-gradient(from calc(var(--start-angle) + 23.400000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    7.0% { background: conic-gradient(from calc(var(--start-angle) + 25.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    7.5% { background: conic-gradient(from calc(var(--start-angle) + 27.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    8.0% { background: conic-gradient(from calc(var(--start-angle) + 28.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    8.5% { background: conic-gradient(from calc(var(--start-angle) + 30.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    9.0% { background: conic-gradient(from calc(var(--start-angle) + 32.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    9.5% { background: conic-gradient(from calc(var(--start-angle) + 34.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    10.0% { background: conic-gradient(from calc(var(--start-angle) + 36.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    10.5% { background: conic-gradient(from calc(var(--start-angle) + 37.800000000000004deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    11.0% { background: conic-gradient(from calc(var(--start-angle) + 39.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    11.5% { background: conic-gradient(from calc(var(--start-angle) + 41.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    12.0% { background: conic-gradient(from calc(var(--start-angle) + 43.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    12.5% { background: conic-gradient(from calc(var(--start-angle) + 45.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    13.0% { background: conic-gradient(from calc(var(--start-angle) + 46.800000000000004deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    13.5% { background: conic-gradient(from calc(var(--start-angle) + 48.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    14.0% { background: conic-gradient(from calc(var(--start-angle) + 50.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    14.5% { background: conic-gradient(from calc(var(--start-angle) + 52.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    15.0% { background: conic-gradient(from calc(var(--start-angle) + 54.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    15.5% { background: conic-gradient(from calc(var(--start-angle) + 55.800000000000004deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    16.0% { background: conic-gradient(from calc(var(--start-angle) + 57.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    16.5% { background: conic-gradient(from calc(var(--start-angle) + 59.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    17.0% { background: conic-gradient(from calc(var(--start-angle) + 61.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    17.5% { background: conic-gradient(from calc(var(--start-angle) + 63.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    18.0% { background: conic-gradient(from calc(var(--start-angle) + 64.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    18.5% { background: conic-gradient(from calc(var(--start-angle) + 66.60000000000001deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    19.0% { background: conic-gradient(from calc(var(--start-angle) + 68.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    19.5% { background: conic-gradient(from calc(var(--start-angle) + 70.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    20.0% { background: conic-gradient(from calc(var(--start-angle) + 72.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    20.5% { background: conic-gradient(from calc(var(--start-angle) + 73.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    21.0% { background: conic-gradient(from calc(var(--start-angle) + 75.60000000000001deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    21.5% { background: conic-gradient(from calc(var(--start-angle) + 77.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    22.0% { background: conic-gradient(from calc(var(--start-angle) + 79.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    22.5% { background: conic-gradient(from calc(var(--start-angle) + 81.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    23.0% { background: conic-gradient(from calc(var(--start-angle) + 82.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    23.5% { background: conic-gradient(from calc(var(--start-angle) + 84.60000000000001deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    24.0% { background: conic-gradient(from calc(var(--start-angle) + 86.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    24.5% { background: conic-gradient(from calc(var(--start-angle) + 88.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    25.0% { background: conic-gradient(from calc(var(--start-angle) + 90.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    25.5% { background: conic-gradient(from calc(var(--start-angle) + 91.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    26.0% { background: conic-gradient(from calc(var(--start-angle) + 93.60000000000001deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    26.5% { background: conic-gradient(from calc(var(--start-angle) + 95.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    27.0% { background: conic-gradient(from calc(var(--start-angle) + 97.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    27.5% { background: conic-gradient(from calc(var(--start-angle) + 99.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    28.0% { background: conic-gradient(from calc(var(--start-angle) + 100.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    28.5% { background: conic-gradient(from calc(var(--start-angle) + 102.60000000000001deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    29.0% { background: conic-gradient(from calc(var(--start-angle) + 104.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    29.5% { background: conic-gradient(from calc(var(--start-angle) + 106.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    30.0% { background: conic-gradient(from calc(var(--start-angle) + 108.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    30.5% { background: conic-gradient(from calc(var(--start-angle) + 109.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    31.0% { background: conic-gradient(from calc(var(--start-angle) + 111.60000000000001deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    31.5% { background: conic-gradient(from calc(var(--start-angle) + 113.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    32.0% { background: conic-gradient(from calc(var(--start-angle) + 115.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    32.5% { background: conic-gradient(from calc(var(--start-angle) + 117.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    33.0% { background: conic-gradient(from calc(var(--start-angle) + 118.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    33.5% { background: conic-gradient(from calc(var(--start-angle) + 120.60000000000001deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    34.0% { background: conic-gradient(from calc(var(--start-angle) + 122.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    34.5% { background: conic-gradient(from calc(var(--start-angle) + 124.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    35.0% { background: conic-gradient(from calc(var(--start-angle) + 126.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    35.5% { background: conic-gradient(from calc(var(--start-angle) + 127.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    36.0% { background: conic-gradient(from calc(var(--start-angle) + 129.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    36.5% { background: conic-gradient(from calc(var(--start-angle) + 131.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    37.0% { background: conic-gradient(from calc(var(--start-angle) + 133.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    37.5% { background: conic-gradient(from calc(var(--start-angle) + 135.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    38.0% { background: conic-gradient(from calc(var(--start-angle) + 136.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    38.5% { background: conic-gradient(from calc(var(--start-angle) + 138.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    39.0% { background: conic-gradient(from calc(var(--start-angle) + 140.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    39.5% { background: conic-gradient(from calc(var(--start-angle) + 142.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    40.0% { background: conic-gradient(from calc(var(--start-angle) + 144.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    40.5% { background: conic-gradient(from calc(var(--start-angle) + 145.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    41.0% { background: conic-gradient(from calc(var(--start-angle) + 147.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    41.5% { background: conic-gradient(from calc(var(--start-angle) + 149.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    42.0% { background: conic-gradient(from calc(var(--start-angle) + 151.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    42.5% { background: conic-gradient(from calc(var(--start-angle) + 153.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    43.0% { background: conic-gradient(from calc(var(--start-angle) + 154.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    43.5% { background: conic-gradient(from calc(var(--start-angle) + 156.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    44.0% { background: conic-gradient(from calc(var(--start-angle) + 158.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    44.5% { background: conic-gradient(from calc(var(--start-angle) + 160.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    45.0% { background: conic-gradient(from calc(var(--start-angle) + 162.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    45.5% { background: conic-gradient(from calc(var(--start-angle) + 163.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    46.0% { background: conic-gradient(from calc(var(--start-angle) + 165.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    46.5% { background: conic-gradient(from calc(var(--start-angle) + 167.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    47.0% { background: conic-gradient(from calc(var(--start-angle) + 169.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    47.5% { background: conic-gradient(from calc(var(--start-angle) + 171.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    48.0% { background: conic-gradient(from calc(var(--start-angle) + 172.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    48.5% { background: conic-gradient(from calc(var(--start-angle) + 174.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    49.0% { background: conic-gradient(from calc(var(--start-angle) + 176.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    49.5% { background: conic-gradient(from calc(var(--start-angle) + 178.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    50.0% { background: conic-gradient(from calc(var(--start-angle) + 180.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    50.5% { background: conic-gradient(from calc(var(--start-angle) + 181.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    51.0% { background: conic-gradient(from calc(var(--start-angle) + 183.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    51.5% { background: conic-gradient(from calc(var(--start-angle) + 185.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    52.0% { background: conic-gradient(from calc(var(--start-angle) + 187.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    52.5% { background: conic-gradient(from calc(var(--start-angle) + 189.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    53.0% { background: conic-gradient(from calc(var(--start-angle) + 190.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    53.5% { background: conic-gradient(from calc(var(--start-angle) + 192.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    54.0% { background: conic-gradient(from calc(var(--start-angle) + 194.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    54.5% { background: conic-gradient(from calc(var(--start-angle) + 196.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    55.0% { background: conic-gradient(from calc(var(--start-angle) + 198.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    55.5% { background: conic-gradient(from calc(var(--start-angle) + 199.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    56.0% { background: conic-gradient(from calc(var(--start-angle) + 201.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    56.5% { background: conic-gradient(from calc(var(--start-angle) + 203.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    57.0% { background: conic-gradient(from calc(var(--start-angle) + 205.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    57.5% { background: conic-gradient(from calc(var(--start-angle) + 207.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    58.0% { background: conic-gradient(from calc(var(--start-angle) + 208.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    58.5% { background: conic-gradient(from calc(var(--start-angle) + 210.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    59.0% { background: conic-gradient(from calc(var(--start-angle) + 212.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    59.5% { background: conic-gradient(from calc(var(--start-angle) + 214.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    60.0% { background: conic-gradient(from calc(var(--start-angle) + 216.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    60.5% { background: conic-gradient(from calc(var(--start-angle) + 217.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    61.0% { background: conic-gradient(from calc(var(--start-angle) + 219.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    61.5% { background: conic-gradient(from calc(var(--start-angle) + 221.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    62.0% { background: conic-gradient(from calc(var(--start-angle) + 223.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    62.5% { background: conic-gradient(from calc(var(--start-angle) + 225.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    63.0% { background: conic-gradient(from calc(var(--start-angle) + 226.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    63.5% { background: conic-gradient(from calc(var(--start-angle) + 228.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    64.0% { background: conic-gradient(from calc(var(--start-angle) + 230.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    64.5% { background: conic-gradient(from calc(var(--start-angle) + 232.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    65.0% { background: conic-gradient(from calc(var(--start-angle) + 234.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    65.5% { background: conic-gradient(from calc(var(--start-angle) + 235.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    66.0% { background: conic-gradient(from calc(var(--start-angle) + 237.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    66.5% { background: conic-gradient(from calc(var(--start-angle) + 239.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    67.0% { background: conic-gradient(from calc(var(--start-angle) + 241.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    67.5% { background: conic-gradient(from calc(var(--start-angle) + 243.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    68.0% { background: conic-gradient(from calc(var(--start-angle) + 244.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    68.5% { background: conic-gradient(from calc(var(--start-angle) + 246.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    69.0% { background: conic-gradient(from calc(var(--start-angle) + 248.4deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    69.5% { background: conic-gradient(from calc(var(--start-angle) + 250.20000000000002deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    70.0% { background: conic-gradient(from calc(var(--start-angle) + 252.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    70.5% { background: conic-gradient(from calc(var(--start-angle) + 253.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    71.0% { background: conic-gradient(from calc(var(--start-angle) + 255.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    71.5% { background: conic-gradient(from calc(var(--start-angle) + 257.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    72.0% { background: conic-gradient(from calc(var(--start-angle) + 259.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    72.5% { background: conic-gradient(from calc(var(--start-angle) + 261.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    73.0% { background: conic-gradient(from calc(var(--start-angle) + 262.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    73.5% { background: conic-gradient(from calc(var(--start-angle) + 264.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    74.0% { background: conic-gradient(from calc(var(--start-angle) + 266.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    74.5% { background: conic-gradient(from calc(var(--start-angle) + 268.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    75.0% { background: conic-gradient(from calc(var(--start-angle) + 270.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    75.5% { background: conic-gradient(from calc(var(--start-angle) + 271.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    76.0% { background: conic-gradient(from calc(var(--start-angle) + 273.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    76.5% { background: conic-gradient(from calc(var(--start-angle) + 275.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    77.0% { background: conic-gradient(from calc(var(--start-angle) + 277.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    77.5% { background: conic-gradient(from calc(var(--start-angle) + 279.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    78.0% { background: conic-gradient(from calc(var(--start-angle) + 280.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    78.5% { background: conic-gradient(from calc(var(--start-angle) + 282.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    79.0% { background: conic-gradient(from calc(var(--start-angle) + 284.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    79.5% { background: conic-gradient(from calc(var(--start-angle) + 286.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    80.0% { background: conic-gradient(from calc(var(--start-angle) + 288.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    80.5% { background: conic-gradient(from calc(var(--start-angle) + 289.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    81.0% { background: conic-gradient(from calc(var(--start-angle) + 291.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    81.5% { background: conic-gradient(from calc(var(--start-angle) + 293.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    82.0% { background: conic-gradient(from calc(var(--start-angle) + 295.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    82.5% { background: conic-gradient(from calc(var(--start-angle) + 297.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    83.0% { background: conic-gradient(from calc(var(--start-angle) + 298.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    83.5% { background: conic-gradient(from calc(var(--start-angle) + 300.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    84.0% { background: conic-gradient(from calc(var(--start-angle) + 302.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    84.5% { background: conic-gradient(from calc(var(--start-angle) + 304.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    85.0% { background: conic-gradient(from calc(var(--start-angle) + 306.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    85.5% { background: conic-gradient(from calc(var(--start-angle) + 307.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    86.0% { background: conic-gradient(from calc(var(--start-angle) + 309.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    86.5% { background: conic-gradient(from calc(var(--start-angle) + 311.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    87.0% { background: conic-gradient(from calc(var(--start-angle) + 313.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    87.5% { background: conic-gradient(from calc(var(--start-angle) + 315.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    88.0% { background: conic-gradient(from calc(var(--start-angle) + 316.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    88.5% { background: conic-gradient(from calc(var(--start-angle) + 318.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    89.0% { background: conic-gradient(from calc(var(--start-angle) + 320.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    89.5% { background: conic-gradient(from calc(var(--start-angle) + 322.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    90.0% { background: conic-gradient(from calc(var(--start-angle) + 324.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    90.5% { background: conic-gradient(from calc(var(--start-angle) + 325.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    91.0% { background: conic-gradient(from calc(var(--start-angle) + 327.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    91.5% { background: conic-gradient(from calc(var(--start-angle) + 329.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    92.0% { background: conic-gradient(from calc(var(--start-angle) + 331.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    92.5% { background: conic-gradient(from calc(var(--start-angle) + 333.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    93.0% { background: conic-gradient(from calc(var(--start-angle) + 334.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    93.5% { background: conic-gradient(from calc(var(--start-angle) + 336.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    94.0% { background: conic-gradient(from calc(var(--start-angle) + 338.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    94.5% { background: conic-gradient(from calc(var(--start-angle) + 340.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    95.0% { background: conic-gradient(from calc(var(--start-angle) + 342.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    95.5% { background: conic-gradient(from calc(var(--start-angle) + 343.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    96.0% { background: conic-gradient(from calc(var(--start-angle) + 345.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    96.5% { background: conic-gradient(from calc(var(--start-angle) + 347.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    97.0% { background: conic-gradient(from calc(var(--start-angle) + 349.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    97.5% { background: conic-gradient(from calc(var(--start-angle) + 351.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    98.0% { background: conic-gradient(from calc(var(--start-angle) + 352.8deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    98.5% { background: conic-gradient(from calc(var(--start-angle) + 354.6deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    99.0% { background: conic-gradient(from calc(var(--start-angle) + 356.40000000000003deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    99.5% { background: conic-gradient(from calc(var(--start-angle) + 358.2deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+    100.0% { background: conic-gradient(from calc(var(--start-angle) + 360.0deg) at 50% 50%, #FF6347 0deg, #00CED1 90deg, #FF6347 180deg, #00CED1 270deg, #FF6347 360deg); }
+}
