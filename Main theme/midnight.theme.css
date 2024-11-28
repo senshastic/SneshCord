@@ -16,11 +16,12 @@
 /* customize things here */
 :root {
 	/* font, change to 'gg sans' for default discord font*/
-	--font2: 'Monaspace Xenon';
+	--font2: 'Publico Text';
 	--font3: 'CMU Concrete';
 	--font: 'CC Wild Words';
 	--font5: 'Comic Code';
 	--font4: 'CC Wild Words'
+	--font7: 'Monaspace Neon'
 
 
 
@@ -156,7 +157,6 @@
 
 .markup_f8f345,
 .text_d7ebeb {
-	font-size: 14px;
     font-family: var(--font2), sans-serif;
 }  
 
