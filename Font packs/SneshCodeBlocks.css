@@ -8,7 +8,7 @@
   
   /* Code block base styling */
   code {
-    /* font-family: 'Monaspace Xenon' !important; */ 
+    /* font-family: 'Monaspace Xenon' !important; */ /* UNCOMMENT THIS LINE TO USE THE FONT */
     position: relative;
     z-index: 1;
     color: white;
