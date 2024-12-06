@@ -21,7 +21,7 @@
 
 
 /*Userprofile backgrounds hiding*/
-.userProfileInner_c69a7b .input_f8bc55, .popoutNoBannerPremium_c3e427,
+.userProfileInner_c69a7b .input_f8bc55, .custom-profile-theme .inner_c69a7b, .popoutNoBannerPremium_c3e427,
 :not(aside):not(.customizationSection_b3a5c2)>.biteSizeInnerThemed_c69a7b, 
 :not(aside):not(.customizationSection_b3a5c2)>.userProfileOuterThemed_c69a7b, 
 :not(aside):not(.customizationSection_b3a5c2)>.userProfileOuterUnthemed_c69a7b, 
@@ -98,7 +98,7 @@
 .scroller_cbdbf0, .container__6e389, .voters_cbdbf0, 
 .addAnswerButton_f24a96, .modalHeader_cd3d24,
 .scrollTierBackground_f09e45, .wrapper_bfc2c6, .body_bf926b,
-.wrapper_c43059, .contentFill_c43059 {
+.wrapper_c43059, .contentFill_c43059, .popoverReactionHoverBar_e986d9 {
     background: none!important;
 }
 
@@ -142,7 +142,7 @@
 .languageSelector_d8e2d0, .recentMentionsPopout_ddb5b4, 
 .customColorPicker_bbc020, .root_f9a4c9:has(>div>div>form>.header_f9a4c9),
 .prompt_cd377c, .vc-notification, .guildPopout_cf5d0a, 
-.selectFilterPopout_cfe282, .container_b572de,
+.selectFilterPopout_cfe282, .container_b572de, .popoverReactionHoverBar_e986d9,
 .root_f9a4c9:has(>.content_cd79c9)  {
     background: transparent!important;
     backdrop-filter: blur(var(--blur-popup));
@@ -167,7 +167,7 @@
 #spotify-Artist-menu::after, #spotify-Album-menu::after,
 #channel-mention-context::after, #mentions-filter::after,
 #dev-context::after*/ [role="menu"][id]:not(#account):not(#guild-context):not(#guild-header-popout)::after, 
-.root_f9a4c9:has(>div>.connectionsContainer_ec99f9)::before {
+.root_f9a4c9:has(>div>.connectionsContainer_ec99f9)::before, .popoverReactionHoverBar_e986d9::before {
     content: "";
     backdrop-filter: blur(var(--blur-popup));
     top: 0;
@@ -209,7 +209,7 @@
 .popout_f6639d::after, .customColorPicker_bbc020::after,
 .root_f9a4c9:has(>div>div>form>.header_f9a4c9)::after, 
 .vc-notification::after, .guildPopout_cf5d0a::after,
-.root_f9a4c9:has(>.content_cd79c9)::after  {
+.root_f9a4c9:has(>.content_cd79c9)::after, .popoverReactionHoverBar_e986d9::after  {
     content: "";
     top: 0;
     left: 0;

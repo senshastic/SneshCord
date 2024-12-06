@@ -4,10 +4,8 @@
       --discord-icon: none; /* discord icon */
       --custom-icon: block; /* hap icon */
       --custom-icon-url: url('https://i.imgur.com/CsE9KLs.png'); /* put whatever but pretty sure it ain't working, janky */
-      --custom-icon-size: cover;
 
       --moon-spin-transition: 0.4s ease;
-
 
 } 
 
