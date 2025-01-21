@@ -1,0 +1,5 @@
+[aria-label="Servers"] > [class^=listItem]:has([data-dnd-name="FallenWorld"]) {
+    position: fixed !important;
+    z-index: 999;
+    bottom: 14px;
+}
